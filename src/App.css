@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -28,11 +32,62 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reminder-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.reminder-container {
+  width: 30em;
+  height: 2em;
+  display: flex;
+  color: #000;
+  border: 1px solid #686868;
+  align-items: center;
+  padding: 0 1em;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.reminder-wrapper:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.reminder {
+  font-size: 15px;
+}
+
+.reminder-id {
+  font-size: 15px;
+}
+
+.reminder-time {
+  font-size: 15px;
+}
+
+.reminder-remove {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+input {
+  margin-left: 10px;
+  min-height: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-left: 12px;
+  margin-bottom: 6px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form > button {
+  display: flex;
+  align-self: center;
 }
